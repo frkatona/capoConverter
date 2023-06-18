@@ -5,7 +5,7 @@
  - all accidentals represented sharp (e.g., Dbm -> C#m)
  - separated by spaces (e.g., A Dm C Fm)
 
- ![example input and corresponding output](example.jpg)
+ ![example input and corresponding output](example.png)
 
 ## to-do
  - allow user to enter a current capo position and adjust accordingly

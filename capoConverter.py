@@ -17,7 +17,6 @@ capoPositions = {
 ## user input desired chords
 chordString = input("Enter chords: ")
 chordList = chordString.split()
-print(chordList)
 
 ## identify valid capo positions
 validPositions = []

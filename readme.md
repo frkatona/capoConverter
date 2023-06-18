@@ -9,6 +9,5 @@
 
 ## to-do
  - allow user to enter a current capo position and adjust accordingly
- - output what the chords shapes will be at each valid capo position
  - add additional chord types
  - convert to ipynb or subpage of website

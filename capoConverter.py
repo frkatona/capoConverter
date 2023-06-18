@@ -1,4 +1,4 @@
-## define valid chords for all capo positions
+## define valid chords for all capo positions and a keyList for reference
 capoPositions = {
     '0': ['A', 'Am', 'C', 'D', 'Dm', 'E', 'Em', 'F', 'Fm', 'G'],
     '1': ['A#', 'A#m', 'C#', 'D#', 'D#m', 'F', 'Fm', 'F#', 'F#m', 'G#'],
@@ -14,6 +14,8 @@ capoPositions = {
     '11': ['G#', 'G#m', 'B', 'C#', 'C#m', 'D#', 'D#m', 'E', 'Em', 'F#']
 }
 
+keyList = ['A', 'Am', 'A#', 'A#m', 'B', 'Bm', 'C', 'Cm', 'C#', 'C#m', 'D', 'Dm', 'D#', 'D#m', 'E', 'Em', 'F', 'Fm', 'F#', 'F#m', 'G', 'Gm', 'G#', 'G#m']
+
 ## user input desired chords
 chordString = input("Enter chords: ")
 chordList = chordString.split()
@@ -24,8 +26,12 @@ for position in capoPositions:
     if all(elem in capoPositions[position] for elem in chordList):
         validPositions.append(position)
 
-## output
-if len(validPositions) != 0:
-    print("Valid capo positions: ", validPositions)
-else:
+## find new chord shapes and output
+if len(validPositions) == 0:
     print("No valid capo positions!  Learn barre chords!")
+else:
+    for validPosition in validPositions:
+        print("Capo position: ", validPosition)
+        for chord in chordList:
+            firstPositionIndex = keyList.index(chord)
+            print(chord, " -> ", keyList[(firstPositionIndex - int(validPosition) * 2)])

@@ -1,0 +1,13 @@
+body {
+    background-color: #5e5e5e;
+}
+.chord {
+    border: 1px solid #000000;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+.selected {
+    background-color: #ddd;
+}

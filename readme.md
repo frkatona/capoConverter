@@ -1,7 +1,7 @@
 # Input Desired Chords, Outputs Valid Capo Positions
-## valid format:
- ![example input and corresponding output](example.png)
- 
+![example input and corresponding output](example.png)
+
+## valid input format:
  - capital letters alone for major chords (e.g., A major -> A)
  - capital letters with a lower case 'm' for minor chords (e.g., A minor -> Am)
  - all accidentals represented sharp (e.g., Dbm -> C#m)
